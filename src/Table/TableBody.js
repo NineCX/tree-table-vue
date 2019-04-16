@@ -301,8 +301,8 @@ export default {
                   <td
                     class={ `${this.prefixCls}--expand-content` }
                     colspan={ this.table.tableColumns.length }>
-                    { this.table.$scopedSlots.$expand
-                      ? this.table.$scopedSlots.$expand({ row, rowIndex })
+                    { this.table.$scopedSlots.expand
+                      ? this.table.$scopedSlots.expand({ row, rowIndex })
                       : ''
                     }
                    </td>
