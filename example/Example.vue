@@ -24,13 +24,13 @@
       :expand-type="props.expandType"
       expand-key="sex"
       @radio-click="handleRadioClick"
-      :selection-type="props.selectable">
+      :selectable="props.selectable">
       <!-- <tree-table
         :columns="columns"
         :expand-type="false"
         :selection-type="false"
         :data="data"> -->
-      <template slot="$expand" slot-scope="scope">
+      <template slot="expand" slot-scope="scope">
         {{ `My name is ${scope.row.name},
            this rowIndex is ${scope.rowIndex}.`
          }}
